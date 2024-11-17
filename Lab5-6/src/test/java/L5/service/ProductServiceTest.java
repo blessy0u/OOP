@@ -21,7 +21,7 @@ class ProductServiceTest {
 
         assertDoesNotThrow(() -> productService.addProductToShelf(product, shelf));
         assertEquals(1, shelf.getProducts().size());
-        assertEquals("Cheese", shelf.getProducts().get(0).getName());
+        assertEquals("Сыр", shelf.getProducts().get(0).getName());
     }
 
     @Test
